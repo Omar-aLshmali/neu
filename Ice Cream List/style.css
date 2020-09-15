@@ -1,0 +1,126 @@
+.toolbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	background: #a6a6a6;
+	box-shadow: 10px 10px 30px 15px rgba(255, 214, 153, 1);
+}
+
+.imageToolbar {
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+}
+
+.container {
+	cursor: pointer;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.bar {
+	width: 50px;
+	height: 10px;
+	background: #404040;
+	margin: 10px;
+}
+
+table,
+td,
+th {
+	border-style: solid;
+	border-width: 5px;
+	background-color: #f2f2f2;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+table {
+	width: 90%;
+	box-shadow: 10px 10px 30px 15px rgba(179, 179, 179, 1);
+}
+
+.tablecontainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: fit-content;
+	width: 90%;
+	transform: translate(-50%, -50%);
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.buttoncontainer {
+	float: right;
+	margin-right: 5%;
+	margin-top: 20px;
+	font-size: 30px;
+	background: #ffd9b3;
+	border-radius: 10px;
+	cursor: progress;
+	box-shadow: 5px 5px 10px 0px rgba(255, 191, 128, 0.75);
+}
+
+.text {
+	font-size: 20px;
+	margin: 5px;
+	margin-bottom: 0;
+	width: 80%;
+}
+
+.check {
+	height: 30px;
+	width: 30px;
+}
+
+.lastbutton {
+	position: absolute;
+	bottom: 5vh;
+	right: 5vh;
+}
+
+body {
+	background: #d9d9d9;
+}
+
+.mySidenav{
+	background-color: black;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333333;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cfcfcf;
+    transition: 0.3s;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #fafafa;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+  }

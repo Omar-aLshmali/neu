@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/Unbenannt.png">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <header class="toolbar">
+        <img src="./assets/Unbenannt.png" alt="Bild von Mensch und Machine" class="imageToolbar">
+        <div class="container" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidenav" id="mySidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+        </div>
+    </header>
+    <div class="tablecontainer">
+        <table  id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Sorte1</th>
+                    <th>Sorte2</th>
+                    <th>Sahne</th>
+                </tr>
+               
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td><input type="text" name="name" id="fname" class="text"></td>
+                    <td><input type="text" name="sorte1" id="fsorte1" class="text"></td>
+                    <td><input type="text" name="sorte2" id="fsorte2" class="text"></td>
+                    <td><input type="checkbox" name="sahne" id="fsahne" class="check" checked ></td>
+                  
+                </tr>  
+            </tbody>
+           
+        </table>
+     
+        <button class="buttoncontainer" onclick="myFunction()">Create</button>
+<script>
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var x = document.getElementById("myTable").rows.length;
+    var row = table.insertRow(x-1);
+    var Name = row.insertCell(0);
+  var Sorte1 = row.insertCell(1);
+  var Sorte2 = row.insertCell(2);
+  var Sahne = row.insertCell(3);
+  Name.innerHTML = document.getElementById("fname").value;
+  Sorte1.innerHTML = document.getElementById("fsorte1").value;
+  Sorte2.innerHTML = document.getElementById("fsorte2").value;
+  Sahne.innerHTML  =document.getElementById("fsahne").checked ;
+
+ 
+  document.getElementById("fsahne").checked="";
+  document.getElementById("fname").value="";
+  document.getElementById("fsorte1").value="";
+  document.getElementById("fsorte2").value="";
+
+ 
+  
+// document.getElementById("fsahne").value;
+  }
+    </script>
+    </div>
+    <div>
+        <button class="buttoncontainer lastbutton">Export</button>
+    </div>
+</body>
+</html>
